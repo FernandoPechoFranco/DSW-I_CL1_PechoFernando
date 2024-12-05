@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"] - DSW I</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+</head>
+<body style="background-color: #77A99D;">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"><a class="nav-link" asp-controller="Disco" asp-action="Index">Disco Sólido</a></li>
+                        <li class="nav-item"><a class="nav-link">Memoria RAM</a></li>
+                        <li class="nav-item"><a class="nav-link">Periféricos</a></li>
+                        <li class="nav-item"><a class="nav-link">Adaptadores</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        @RenderBody()
+    </main>
+</body>
+</html>

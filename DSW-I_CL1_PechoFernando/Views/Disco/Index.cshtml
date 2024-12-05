@@ -1,0 +1,9 @@
+﻿@model int
+<h2>Calcular CDs Necesarios</h2>
+<form asp-action="Calcular" method="post">
+    <label for="disco">Capacidad del Disco Duro (GB):</label>
+    <input type="number" name="disco" id="disco" required />
+    <button type="submit" style="background-color: #FBB03B; color: #FFFFFF; border: none; padding: 10px 20px; border-radius: 5px; font-size: 16px; cursor: pointer;">
+        Calcular
+    </button>
+</form>
